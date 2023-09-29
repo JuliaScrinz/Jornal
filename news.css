@@ -1,0 +1,168 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand';
+}
+.itens{
+    text-decoration: none;
+    color: #9bd0ba;
+    font-size: x-large;
+    font-weight: 600;
+
+}
+ul{
+    list-style: none;
+}
+.riscosmenu{
+    width: 40px;
+}
+input[type="checkbox"]{
+    display: none;
+}
+nav{
+    background-color: #9bd0ba;
+    width: 350px;
+    height: 100%;
+    position: absolute;
+    left: -350px;
+    transition: all 0.5s;
+}
+input[type="checkbox"]:checked ~ nav{
+    transform: translateX(350px);
+}
+.itens{
+    display: block;
+    padding: 20px 5px;
+    color: white;
+    margin-left: 25px;
+    font-size: x-large;
+    font-weight: 600;
+}
+.itens:hover{
+    border-bottom: 3px solid #ea524c;
+    margin-right: 200px;
+    color: white;
+
+}
+label{
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+}
+.lista-menu{
+    top: 70px;
+    position: absolute;
+    width: 100%;
+}
+header{
+    border-bottom: 5px solid rgb(230, 230, 230);
+    background-color: white;
+    display: grid;
+    grid-area: header;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+}
+#menu{
+    list-style: none;
+    padding: 10px;
+}
+#menu li{
+    display: inline;
+    font-size: x-large;
+    font-weight: 600;
+    padding: 10px;
+    position: relative;
+}
+#menu li a{
+    display: inline-block;
+    color: #9BD0BA;
+    text-decoration: none;
+    padding: 10px;
+    
+}
+#menu li a:hover{
+    border-bottom: 3px solid #EA524C;
+    padding: 10px;
+
+}
+.titulo{
+    font-weight: 700;
+    color: #F5B561;
+    font-size: xxx-large;
+}
+.logo{
+    width: 10vw;
+    height: 19vh;
+}
+body{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 15% 75% 10%;
+    grid-template-areas: 'header header'
+    'aside main'
+    'footer footer';
+}
+aside{
+    display: grid;
+    grid-area: aside;
+}
+.imagens{
+    width: 15vw;
+    height: 20vh;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+}
+.texto{
+    align-items: flex-start;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    border-left: 5px solid #F5B561;
+    padding-left: 25px;
+    margin-bottom: 31px;
+    margin-top: 21px;
+    margin-right: 30px;
+}
+main{
+    display: grid;
+    grid-area: main;
+    margin-top: 65px;
+    padding: 15px;
+}
+.sessoes{
+    display: flex;
+}
+.titulo-recentes{
+    padding: 10px;
+    margin-left: 35px;
+    border-left: 9px solid #ea524c;
+    margin-top: 15px;
+}
+#titulo{
+    font-size: x-large;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+.data{
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+}
+footer{
+    background-color: #9BD0BA;
+    height: 20vh;
+    display: grid;
+    grid-area: footer;
+}
+#footer{
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flexbox;
+    font-weight: 500;
+    padding: 20px;
+}
